@@ -1,4 +1,4 @@
 cheat-sheet
 ===========
 
-blog and cheat sheet powered by `wheat`, `git` and `node.js`.
+Blog and **handy** reference-cards powered by `wheat`, `git` and `node.js`.
