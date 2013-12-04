@@ -5,15 +5,23 @@ Node: v0.8.15
 Categories: node,blog,wheat
 
 In this article I'll show you how to setup a Node / Git powered blog using the 
-<a href="https://github.com/creationix/wheat/" target="_blank">Wheat engine</a> created by [Tim Caswell](https://twitter.com/creationix).
+<a href="https://github.com/creationix/wheat/" target="_blank">Wheat engine</a>
+created by [Tim Caswell](https://twitter.com/creationix).
 
-There are many Git based blog engines available (see references), but I opted for this one for a couple of reasons:
+There are many Git based blog engines available (see references), but I opted
+for this one for a couple of reasons:
 
  - Node.js related features (supports node versions, node code snippets / online evaluation of code snippets / ...)
  - Supports categories (tags)
  - Is made by a great node developer
 
-The idea is simple. We push content (blog articles) to a central Git repository (in this case Github). A post-receive hook on the git repository (GitHub calls them) is configured to POST data to a URL, allowing us to update a bare git repository on our blog server. The <a href="https://github.com/creationix/wheat/" target="_blank">Wheat engine</a> is a node process running on our blog server that reads the bare git repository, and serves up our blog pages.
+The idea is simple. We push content (blog articles) to a central Git repository
+(in this case Github). A post-receive hook on the git repository (GitHub calls
+them) is configured to POST data to a URL, allowing us to update a bare git
+repository on our blog server. The <a
+href="https://github.com/creationix/wheat/" target="_blank">Wheat engine</a> is
+a node process running on our blog server that reads the bare git repository,
+and serves up our blog pages.
 
 ![Git Powered Blog](https://dl.dropboxusercontent.com/u/13246619/Node/GitPoweredBlog/GitPoweredBlog.png)
 
